@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html.dark {
+  background-color: #18181b;
+}
+
+body.dark {
+  background-color: #18181b;
+}
+
+/* Optional: override some default backgrounds for dark mode */
+.bg-white.dark\:bg-gray-900, .dark .bg-white { background-color: #18181b !important; }
+.text-gray-900.dark\:text-gray-100, .dark .text-gray-900 { color: #f3f4f6 !important; }
+.text-gray-600.dark\:text-gray-300, .dark .text-gray-600 { color: #d1d5db !important; }
+.border-gray-200.dark\:border-gray-700, .dark .border-gray-200 { border-color: #374151 !important; }
