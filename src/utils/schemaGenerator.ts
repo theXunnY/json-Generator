@@ -13,6 +13,22 @@ const SAMPLE_NAMES = [
   'Payal Chopra', 'Harsh Venkatesh', 'Rachna Bhattacharya', 'Sagar Patil', 'Trisha Naik'
 ];
 
+const SAMPLE_PRODUCTS = [
+  'Smartphone X10', 'Ultra HD TV 55"', 'Wireless Earbuds Pro', 'Fitness Tracker Band',
+  'Bluetooth Speaker Max', 'Laptop Air 14', 'Gaming Console X', 'Smartwatch Elite',
+  'Portable Hard Drive 1TB', 'Noise Cancelling Headphones', 'Tablet S8', 'LED Desk Lamp',
+  'USB-C Fast Charger', 'Electric Kettle Pro', 'Robot Vacuum Cleaner', 'Water Purifier Max',
+  '4K Action Camera', 'Wireless Keyboard', 'Ergonomic Office Chair', 'Mini Projector HD',
+  'Smart Thermostat', 'Android TV Stick', 'Hair Dryer Ionic', 'Smart Light Bulb',
+  'Mechanical Gaming Keyboard', 'Home Security Camera', 'Air Fryer XL', 'Portable Blender',
+  'Cordless Drill Set', 'Infrared Thermometer', 'Electric Toothbrush', 'Standing Desk Converter',
+  'Noise Meter Pro', 'Laser Printer All-in-One', 'Smart Door Lock', 'Laptop Cooling Pad',
+  'Massage Gun Pro', 'VR Headset 360', 'Tripod Stand Compact', 'Wireless Mouse',
+  'Coffee Maker Deluxe', 'Smart Mirror Light', 'Digital Alarm Clock', 'Electric Bike X',
+  'Folding Treadmill', 'Drawing Tablet Pro', '3D Printer Kit', 'Wireless Router AX',
+  'Rechargeable Fan', 'Dash Cam HD'
+];
+
 
 const SAMPLE_WORDS = [
   'innovation', 'development', 'technology', 'solution', 'project',
@@ -66,6 +82,8 @@ export class MockDataGenerator {
     switch (type) {
       case 'name':
         return SAMPLE_NAMES[Math.floor(Math.random() * SAMPLE_NAMES.length)];
+      case 'product':
+        return SAMPLE_PRODUCTS[Math.floor(Math.random() * SAMPLE_PRODUCTS.length)];
       case 'city':
         return SAMPLE_CITIES[Math.floor(Math.random() * SAMPLE_CITIES.length)];
       case 'street':
@@ -123,6 +141,9 @@ export class MockDataGenerator {
     }
     if (name.includes('email')) {
       return 'email';
+    }
+    if (name.includes('product')) {
+      return 'product';
     }
     if (name.includes('city')) {
       return 'city';

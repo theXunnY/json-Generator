@@ -22,7 +22,7 @@ const getDefaultTemplates = (): SchemaTemplate[] => [
     createdAt: new Date().toISOString(),
     schema: [
       { id: 1, name: 'id', type: 'number', isPrimaryKey: true },
-      { id: 2, name: 'title', type: 'string' },
+      { id: 2, name: 'product', type: 'string' },
       { id: 3, name: 'description', type: 'string' },
       { id: 4, name: 'price', type: 'number' },
       { id: 5, name: 'inStock', type: 'boolean' },
