@@ -12,7 +12,7 @@ function App() {
   const [generatedJson, setGeneratedJson] = useState<JsonSchema | JsonSchema[] | null>(null);
   const [isGenerating, setIsGenerating] = useState(false);
   const [recordCount, setRecordCount] = useState<number>(1);
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   useEffect(() => {
     const root = window.document.documentElement;
