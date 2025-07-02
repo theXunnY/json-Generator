@@ -1,11 +1,18 @@
 import { SchemaField, JsonSchema } from '../types/schema';
 
 const SAMPLE_NAMES = [
-  'Alice Johnson', 'Bob Smith', 'Carol Davis', 'David Wilson', 'Eva Brown',
-  'Frank Miller', 'Grace Lee', 'Henry Taylor', 'Ivy Anderson', 'Jack Thompson',
-  'Kate Williams', 'Liam Garcia', 'Maya Rodriguez', 'Noah Martinez', 'Olivia Lopez',
-  'Paul Hernandez', 'Quinn Gonzalez', 'Ruby Perez', 'Sam Wilson', 'Tara Moore'
+  'Aarav Sharma', 'Diya Patel', 'Rohan Mehta', 'Ananya Iyer', 'Karan Nair',
+  'Sneha Reddy', 'Vikram Kapoor', 'Ishita Joshi', 'Raj Malhotra', 'Pooja Desai',
+  'Aditya Rao', 'Nikita Singh', 'Arjun Verma', 'Priya Agarwal', 'Manav Bhatt',
+  'Neha Choudhary', 'Siddharth Bansal', 'Kritika Menon', 'Rahul Sinha', 'Riya Das',
+  'Ayaan Trivedi', 'Tanvi Shetty', 'Devansh Ghosh', 'Meera Pillai', 'Yash Mahajan',
+  'Saanvi Kulkarni', 'Akhil Saxena', 'Lavanya Dutta', 'Rudra Joshi', 'Shreya Pandey',
+  'Ishan Kaur', 'Bhavna Rathi', 'Amitabh Chauhan', 'Kavya Sehgal', 'Mohit Dubey',
+  'Nandini Batra', 'Krishna Vora', 'Anjali Jain', 'Tanishq Tyagi', 'Simran Kohli',
+  'Paras Rawat', 'Mitali Banerjee', 'Varun Chatterjee', 'Aishwarya Gopal', 'Deepak Raina',
+  'Payal Chopra', 'Harsh Venkatesh', 'Rachna Bhattacharya', 'Sagar Patil', 'Trisha Naik'
 ];
+
 
 const SAMPLE_WORDS = [
   'innovation', 'development', 'technology', 'solution', 'project',
@@ -14,16 +21,32 @@ const SAMPLE_WORDS = [
 ];
 
 const SAMPLE_CITIES = [
-  'New York', 'London', 'Tokyo', 'Paris', 'Sydney',
-  'Berlin', 'Toronto', 'Singapore', 'Dubai', 'Barcelona',
-  'Amsterdam', 'Stockholm', 'Copenhagen', 'Vienna', 'Zurich'
+  'Mumbai', 'Delhi', 'Bangalore', 'Hyderabad', 'Ahmedabad',
+  'Chennai', 'Kolkata', 'Pune', 'Jaipur', 'Lucknow',
+  'Kanpur', 'Nagpur', 'Indore', 'Bhopal', 'Patna',
+  'Vadodara', 'Ludhiana', 'Agra', 'Nashik', 'Faridabad',
+  'Meerut', 'Rajkot', 'Varanasi', 'Srinagar', 'Amritsar',
+  'Ranchi', 'Coimbatore', 'Vijayawada', 'Jodhpur', 'Raipur',
+  'Guwahati', 'Chandigarh', 'Solapur', 'Hubli', 'Mysore',
+  'Tiruchirappalli', 'Jalandhar', 'Bhubaneswar', 'Noida', 'Gwalior',
+  'Thiruvananthapuram', 'Aurangabad', 'Salem', 'Warangal', 'Tirupati',
+  'Udaipur', 'Dehradun', 'Allahabad', 'Aligarh', 'Jamshedpur'
 ];
 
-const SAMPLE_STREETS = [
-  'Main Street', 'Oak Avenue', 'Elm Drive', 'Park Lane', 'First Street',
-  'Second Avenue', 'Maple Road', 'Cedar Way', 'Pine Street', 'Sunset Boulevard',
-  'Broadway', 'Fifth Avenue', 'Wall Street', 'Market Street', 'Church Street'
+
+const SAMPLE_STREETS= [
+  'MG Road', 'Netaji Subhash Marg', 'Nehru Street', 'Jawahar Road', 'Gandhi Path',
+  'Rajpath', 'Lal Bahadur Shastri Marg', 'Indira Nagar', 'Ashok Vihar', 'Sarojini Street',
+  'Bapu Bazaar Road', 'Anna Salai', 'Kasturba Gandhi Road', 'Tilak Marg', 'Bhagat Singh Road',
+  'Vivekananda Street', 'Ambedkar Chowk', 'Patel Nagar', 'Tagore Avenue', 'Rani Laxmi Bai Road',
+  'Sardar Vallabhbhai Patel Marg', 'Krishna Nagar', 'Shivaji Path', 'Chandni Chowk', 'Hanuman Galli',
+  'Dharampeth Extension', 'Malviya Road', 'Shastri Street', 'Subhash Chowk', 'Azad Nagar Lane',
+  'Gokhale Marg', 'Rajendra Path', 'Deshbandhu Road', 'Nizamuddin Lane', 'Park Town Road',
+  'Mira Bai Marg', 'Narayan Das Street', 'Ravindra Nagar', 'Lokmanya Tilak Road', 'Sai Baba Lane',
+  'Basaveshwara Road', 'Tagore Marg', 'Raja Ram Mohan Roy Street', 'Kali Temple Lane', 'Mahatma Gandhi Road',
+  'Bose Lane', 'Sarvapalli Radhakrishnan Street', 'Chhatrapati Shivaji Marg', 'Balaji Nagar Lane', 'Temple Street'
 ];
+
 
 const SAMPLE_EMAILS = [
   'user@example.com', 'contact@company.com', 'info@business.org',
